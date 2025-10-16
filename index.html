@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'; min-height: 25.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p class="p1"><b></b><br></p>
+<p class="p2">&lt;!DOCTYPE html&gt;</p>
+<p class="p2">&lt;html&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;title&gt;ระบบโรงเรียนบ้านโคกกว้าง&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script src="https://static.line-scdn.net/liff/edge/2/sdk.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>body { font-family: sans-serif; text-align:center; padding: 20px; }</p>
+<p class="p2"><span class="Apple-converted-space">    </span>.profile img { width:100px; border-radius:50%; }</p>
+<p class="p2"><span class="Apple-converted-space">    </span>.nav { position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-around; background: #f5f5f5; padding: 10px 0; }</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;h2&gt;บัญชีลูกค้าโรงเรียนบ้านโคกกว้าง&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;div id="profile" class="profile"&gt;&lt;/div&gt;</p>
+<p class="p3"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;h3&gt;📋 รายการข้อมูลของคุณ&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;div id="data"&gt;&lt;/div&gt;</p>
+<p class="p3"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;div class="nav"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div&gt;🏠 หน้าแรก&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div&gt;📚 บริการ&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div&gt;📰 ข่าวสาร&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>&lt;div&gt;☎️ ติดต่อ&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p3"><br></p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span>async function main() {</p>
+<p class="p2"><span class="Apple-converted-space">      </span>await liff.init({ liffId: "2008301272-bX4ZODMd" }); //<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">      </span>if (liff.isLoggedIn()) {</p>
+<p class="p2"><span class="Apple-converted-space">        </span>const profile = await liff.getProfile();</p>
+<p class="p2"><span class="Apple-converted-space">        </span>document.getElementById('profile').innerHTML =</p>
+<p class="p2"><span class="Apple-converted-space">          </span>`&lt;img src="${profile.pictureUrl}" alt="profile"&gt;&lt;br&gt;</p>
+<p class="p2"><span class="Apple-converted-space">           </span>&lt;b&gt;${profile.displayName}&lt;/b&gt;&lt;br&gt;</p>
+<p class="p2"><span class="Apple-converted-space">           </span>LINE ID: ${profile.userId}`;</p>
+<p class="p2"><span class="Apple-converted-space">        </span>document.getElementById('data').innerHTML = "ข้อมูลเฉพาะของคุณจะแสดงที่นี่ เช่น ประวัตินักเรียน";</p>
+<p class="p2"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p2"><span class="Apple-converted-space">        </span>liff.login();</p>
+<p class="p2"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span>main();</p>
+<p class="p2"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p2">&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
+</body>
+</html>
